@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+
+<?import javafx.scene.image.ImageView?>
+<AnchorPane prefHeight="300" prefWidth="500" style="-fx-background-color: #2a042a; -fx-background-radius: 50 50 50 50;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="socialnetwork.controler.LogIn">
+    <children>
+
+        <ImageView fitHeight="300" fitWidth="500" >
+            <image>
+                <Image url="imgs/fx7u4zjb3ub61.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="25" fitWidth="25" layoutX="300" layoutY="70"  style="-fx-background-radius: 50 50 50 50; -fx-effect: dropshadow(three-pass-box, rgba(1,1,1,1), 10, 0.5, 0, 0); ">
+            <image>
+                <Image url="imgs/user2.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="logInButton" layoutY="230" style="-fx-background-color: #924eff " mnemonicParsing="false" onAction="#onLogInButtonCLick" prefHeight="5" prefWidth="5" text="Log In" textAlignment="CENTER" textFill="#ecc4ff"
+                AnchorPane.leftAnchor="200" AnchorPane.rightAnchor="200">
+            <font>
+                <Font name="Veranda" size="10.0" />
+            </font>
+        </Button>
+        <TextField fx:id="FirstName"  layoutY="120" prefHeight="20" prefWidth="260" promptText="First Name" AnchorPane.leftAnchor="120" AnchorPane.rightAnchor="120" />
+        <TextField fx:id="LastName"   layoutY="150"  prefHeight="20" prefWidth="260" promptText="Last Name"  AnchorPane.leftAnchor="120" AnchorPane.rightAnchor="120" />
+        <PasswordField fx:id="password" layoutY="180" prefHeight="20" prefWidth="260" promptText="Password" AnchorPane.leftAnchor="120" AnchorPane.rightAnchor="120" />
+
+
+        <Label layoutX="200" layoutY="60" text="Sign in" textFill="#ecc4ff" textAlignment="CENTER">
+            <font>
+                <Font name="Veranda" size="30" />
+            </font>
+        </Label>
+
+        <Text fx:id="nameErrorText" fill="#ffffff" layoutX="295" layoutY="220" strokeType="OUTSIDE" strokeWidth="0.0" text="Wrong name!" visible="false"  AnchorPane.leftAnchor="220" AnchorPane.rightAnchor="100">
+            <font>
+                <Font name="System Bold" size="9.0" />
+            </font>s
+        </Text>
+        <Text fx:id="passwordErrorText" fill="#ffffff" layoutX="295" layoutY="220" strokeType="OUTSIDE" strokeWidth="0.0" text="Wrong password!" visible="false" AnchorPane.leftAnchor="220" AnchorPane.rightAnchor="100">
+            <font>
+                <Font name="System Bold" size="9.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>

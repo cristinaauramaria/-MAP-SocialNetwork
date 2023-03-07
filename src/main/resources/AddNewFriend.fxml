@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="socialnetwork.controler.AddNewFriend"
+            prefHeight="300" prefWidth="500"
+            style="-fx-background-color: #2a042a;">
+    <children>
+        <ImageView fitHeight="300" fitWidth="500" layoutX="50" >
+            <image>
+                <Image url="imgs/93eed516376d8ab24a79413aad72c0b8.jpg"/>
+            </image>
+        </ImageView>
+        <Button fx:id="DeleteFRQ" layoutX="290" layoutY="170" style="-fx-background-color: #5c2da9 " mnemonicParsing="false" onAction="#handleDeleteFrRequest" visible="true" text="Delete Friend Requests" textFill="#ecc4ff">
+            <font>
+                <Font  name="Verdana" size="12.0" />
+            </font>
+        </Button>
+
+        <Button layoutX="347" layoutY="230" style="-fx-background-color: #5c2da9 " mnemonicParsing="false" onAction="#handleBack" text="Back" textFill="#ecc4ff">
+            <font>
+                <Font  name="Verdana" size="12.0" />
+            </font>
+        </Button>
+
+        <Button fx:id="SendFRQ" layoutX="300" layoutY="110" style="-fx-background-color: #5c2da9 " mnemonicParsing="false" onAction="#handleAddFriend" visible="true" text="Send friend request" textFill="#ecc4ff">
+            <font>
+                <Font  name="Verdana" size="12.0" />
+            </font>
+        </Button>
+
+        <TableView fx:id="requestsTable" layoutY="0" style="-fx-border-color: #2a042a" prefHeight="300" prefWidth="250">
+            <columns>
+                <TableColumn fx:id="tableColFirstName" prefWidth="125" text="First Name" />
+                <TableColumn fx:id="tableColLastName" minWidth="0.0" prefWidth="125" text="Last Name" />
+
+            </columns>
+        </TableView>
+
+        <HBox alignment="CENTER" style="-fxbackground-color:#5c2da9 " layoutX="300" layoutY="250" prefHeight="68.0" prefWidth="141.0">
+            <children>
+                <Label fx:id="labelCurrentUser" text="Current User" textFill="#ecd7ff">
+                    <font>
+                        <Font  name="Verdana" size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+    </children>
+
+</AnchorPane>

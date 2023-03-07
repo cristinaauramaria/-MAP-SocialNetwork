@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="socialnetwork.controler.MessageCt"
+            prefHeight="400.0" prefWidth="600.0"
+            style="-fx-background-color: #1e001e">
+    <children>
+
+        <Button layoutX="420" layoutY="20" style="-fx-background-color: #5c2da9 " mnemonicParsing="false" onAction="#handleBack" text="Back" textFill="#ecc4ff">
+            <font>
+                <Font  name="Verdana" size="12.0" />
+            </font>
+        </Button>
+
+        <HBox alignment="CENTER" style="-fxbackground-color:#5c2da9 " layoutX="300" layoutY="250" prefHeight="68.0" prefWidth="141.0">
+            <children>
+                <Label fx:id="labelCurrentUser" text="Current User" textFill="#ecd7ff">
+                    <font>
+                        <Font  name="Verdana" size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+
+        <TextField fx:id="MessageText"  layoutY="240" prefHeight="20" prefWidth="260" promptText="Enter your message here" AnchorPane.leftAnchor="30" AnchorPane.rightAnchor="120" />
+        <Button layoutX="410" layoutY="240" style="-fx-background-color: #5c2da9 " mnemonicParsing="false" onAction="#handleSendMessage" text="Send" textFill="#ecc4ff">
+            <font>
+                <Font  name="Verdana" size="12.0" />
+            </font>
+        </Button>
+        <TextArea fx:id="requestsdata" layoutX="30" layoutY="10" style="-fx-border-color: #2a042a" prefHeight="220" prefWidth="350">
+            <scrollLeft>
+            </scrollLeft>
+        </TextArea>
+
+
+    </children>
+</AnchorPane>
